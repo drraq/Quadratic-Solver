@@ -7,18 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta rel="canonical" href="https://quadraticsolver.com/">
-  <meta property="og:title" content="Online Quadratic Equaiton Solver | Quadratic Solver" />
-  <meta name="keywords" content="quadratic solver,quadratic equation solver,online quadratic equation solver,quadratic equation calculator,online quadratic calculator,roots of quadratic equaiton,solutions of quadratic equation"/>
+  <meta property="og:title" content="Online Quadratic Equation Solver | Quadratic Solver" />
+  <meta name="keywords" content="quadratic solver,quadratic equation solver,online quadratic equation solver,quadratic equation calculator,online quadratic calculator,roots of quadratic equation,solutions of quadratic equation"/>
   <meta name="description" content="Free and online quadratic equation solver. Just enter a, b and c values and get the solutions of your quadratic equation instantly. Fast and easy to use quadratic equation calculator."/>
   <meta property="og:locale" content="en_GB" />
   <meta property="og:site_name" content="Quadratic Solver" />
-  <meta property="og:description" content="Free and online quadratic equation solver. Just enter a, b and c values and quadrtic equation calculator will give you the roots (solution) of the equation." />
+  <meta property="og:description" content="Free and online quadratic equation solver. Just enter a, b and c values and quadratic equation calculator will give you the roots (solution) of the equation." />
   <meta property="og:url" content="https://quadraticsolver.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://quadraticsolver.com/imgs/thumbnail-quadratic-solver.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:description" content="Free and online quadratic equation solver. Just enter a, b and c values and quadrtic equation calculator will give you the roots (solution) of the equation." />
-  <meta name="twitter:title" content="Online Quadratic Equaiton Solver | Quadratic Solver" />
+  <meta name="twitter:title" content="Online Quadratic Equation Solver | Quadratic Solver" />
   <meta name="twitter:image" content="https://quadraticsolver.com/imgs/thumbnail-quadratic-solver.png" />
   <title>Online Quadratic Equation Solver | Quadratic Solver</title>
   <link rel="stylesheet" href="/css/index.css">
@@ -70,13 +70,19 @@
       <div class="f22 cad"><b>a :</b><input type="number" id="a" placeholder="Enter value for a" class="hind-guntur f16 cad" step="any" autofocus autocomplete="off" onkeydown="blurOut(event,this);"></div>
       <div class="f22 cad margin20T"><b>b :</b><input type="number" id="b" placeholder="Enter value for b" class="hind-guntur f16 cad" step="any" autocomplete="off" onkeydown="blurOut(event,this);"></div>
       <div class="f22 cad margin20T"><b>c :</b><input type="number" id="c" placeholder="Enter value for c" class="hind-guntur f16 cad" step="any" autocomplete="off" onkeydown="blurOut(event,this);"></div>
-      <div id="spit-error-msg" class="margin10T error-red f14">&nbsp;</div><button class="f14 hind-guntur button margin5T cursor-pointer" onclick="clearValues();">CLEAR</button><!-- <div id="need-help" class="blue align-center margin10T cursor-pointer">Need help entering values?</div>-->
+      <div id="spit-error-msg" class="margin10T error-red f14">&nbsp;</div>
+      <div class="buttonS">
+        <button class="f14 hind-guntur button margin5T cursor-pointer" onclick="answerFocus();">SUBMIT</button>
+        <button class="f14 hind-guntur button margin5T cursor-pointer" onclick="clearValues();">CLEAR</button>
+      </div>
+      <!-- <div id="need-help" class="blue align-center margin10T cursor-pointer">Need help entering values?</div>-->
       <h3 class="margin20T hind-guntur cad lh">Roots (Solutions) of the equation</h3>
       <div class="f22 cad margin10T"><b>x<sub>1</sub> :</b><input type="text" id="x1" class="hind-guntur-bold f18 cad" readonly>&nbsp;<span class="cursor-pointer afb f10 hind-guntur-bold copy" onclick="copiedToClipBoard('x1', this);">COPY</span></div>
       <div class="f22 cad margin10T"><b>x<sub>2</sub> :</b><input type="text" id="x2" class="hind-guntur-bold f18 cad" readonly>&nbsp;<span class="cursor-pointer afb f10 hind-guntur-bold copy" onclick="copiedToClipBoard('x2', this);">COPY</span></div>
+      <div class="margin5T f14 hind-guntur blue not-visible" id="your-disc">&nbsp;</div>
     </div>
   </div>
 </body>
-<script src="/js/index.js"></script>
+<script src="/js/index.js" type="text/javascript"></script>
 
 </html>
