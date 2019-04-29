@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="theme-color" content="#95AEC0" />
+  <meta name="theme-color" content="#314B53" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -28,8 +28,8 @@
       "@context": "http://schema.org",
       "@type": ["WebPage", "CreativeWork", "Thing"],
       "breadcrumb": "Mathematics > Online Calculators > Quadratic Equation Solver",
-      "lastReviewed": "2019-04-27",
-      "primaryImageOfPage": "https://quadraticsolver.com/imgs/quadratic-solver-logo.png",
+      "lastReviewed": "2019-04-29",
+      "primaryImageOfPage": "https://quadraticsolver.com/imgs/quadratic_formula.png",
       "about": "Online quadratic equation solver",
       "accessModeSufficient": ["textual", "visual"],
       "accessibilitySummary": "Just enter the values of the coefficients of quadratic equation and get the roots (solution) of the equation",
@@ -52,7 +52,12 @@
 </head>
 
 <body class="off-white">
-  <header> <img class="center-image" src="/imgs/quadratic-solver-logo.png" alt="Quadratic Solver Logo"> </header>
+  <nav class="nav-bgc">
+    <div>
+      <div class="merienda f20 margin10L E8 ls">QUADRATIC SOLVER</div>
+      <div class="f12 hind-guntur E8 margin10L">ONE PLACE FOR ALL YOUR QUADRATIC QUERIES</div>
+    </div>
+  </nav>
   <div class="large-leader-board">Large Leader Board</div>
   <div class="leader-board">Leader Board</div>
   <div class="banner">Banner</div>
@@ -72,8 +77,8 @@
       <div class="f22 cad margin20T"><b>c :</b><input type="number" id="c" placeholder="Enter value for c" class="hind-guntur f16 cad" step="any" autocomplete="off" onkeydown="blurOut(event,this);"></div>
       <div id="spit-error-msg" class="margin10T error-red f14">&nbsp;</div>
       <div class="buttonS">
-        <button class="f14 hind-guntur button margin5T cursor-pointer" onclick="answerFocus();">SUBMIT</button>
-        <button class="f14 hind-guntur button margin5T cursor-pointer" onclick="clearValues();">CLEAR</button>
+        <button class="f14 hind-guntur button margin5T cursor-pointer" onclick="answerFocus(this);">SUBMIT</button>
+        <button class="f14 hind-guntur button margin5T cursor-pointer" onclick="clearValues(this);">CLEAR</button>
       </div>
       <!-- <div id="need-help" class="blue align-center margin10T cursor-pointer">Need help entering values?</div>-->
       <h3 class="margin20T hind-guntur cad lh">Roots (Solutions) of the equation</h3>
