@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:title" content="Online Quadratic Equation Solver | Quadratic Solver" />
-  <meta name="keywords" content="quadratic solver,quadratic equation solver,online quadratic equation solver,quadratic equation calculator,online quadratic calculator,roots of quadratic equation,solutions of quadratic equation"/>
+  <meta name="keywords" content="quadratic solver,quadratic equation solver,online quadratic equation solver,quadratic equation calculator,online quadratic calculator,roots of quadratic equation,solutions of quadratic equation,quadratic formula,algebra,solve,calculator,online calculator"/>
   <meta name="description" content="Free and online quadratic equation solver. Just enter a, b and c values and get the solutions of your quadratic equation instantly. Fast and easy to use quadratic equation calculator."/>
+  <meta name="thumbnail" content="https://quadraticsolver.com/imgs/online_quadratic_solver.png" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:site_name" content="Quadratic Solver" />
   <meta property="og:description" content="Free and online quadratic equation solver. Just enter a, b and c values and quadratic equation calculator will give you the roots (solution) of the equation." />
@@ -21,7 +22,8 @@
   <title>Online Quadratic Equation Solver | Quadratic Solver</title>
   <link rel="canonical" href="https://quadraticsolver.com/" />
   <link rel="stylesheet" href="/css/index.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" size="64x64">
+  <link rel="icon" href="/favicon_32.ico" type="image/x-icon" size="32x32">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
   <script type="application/ld+json">
     {
@@ -29,7 +31,7 @@
       "@type": ["WebPage", "CreativeWork", "Thing"],
       "breadcrumb": "Mathematics > Online Calculators > Quadratic Equation Solver",
       "lastReviewed": "2019-04-29",
-      "primaryImageOfPage": "https://quadraticsolver.com/imgs/quadratic_formula.png",
+      "primaryImageOfPage": "https://quadraticsolver.com/imgs/online_quadratic_solver.png",
       "about": "Online quadratic equation solver",
       "accessModeSufficient": ["textual", "visual"],
       "accessibilitySummary": "Just enter the values of the coefficients of quadratic equation and get the roots (solution) of the equation",
@@ -40,6 +42,8 @@
       "headline": "One place for all your quadratic queries",
       "inLanguage": "English",
       "isAccessibleForFree": "true",
+      "accessibilityFeature": ["latex", "MathML", "longDescription"],
+      "accessibilityControl": ["fullKeyboardControl", "fullTouchControl"],
       "keywords": ["quadratic solver", "online quadratic solver", "quadratic equation calculator", "quadratic formula solver", "online roots of quadratic equation"],
       "learningResourceType": "Calculator",
       "thumbnailUrl": "https://quadraticsolver.com/imgs/thumbnail-quadratic-solver.png",
@@ -55,7 +59,12 @@
   <nav class="nav-bgc">
     <div>
       <div class="merienda f20 margin10L E8 ls">QUADRATIC SOLVER</div>
-      <div class="f12 hind-guntur E8 margin10L">ONE PLACE FOR ALL YOUR QUADRATIC QUERIES</div>
+      <div class="f12 hind-guntur E8 margin10L">FOR ALL YOUR QUADRATIC QUERIES</div>
+    </div>
+    <div class="hamburger margin10R">
+      <div></div>
+      <div class="middle-line"></div>
+      <div></div>
     </div>
   </nav>
   <div class="large-leader-board">Large Leader Board</div>
@@ -64,7 +73,7 @@
   <div class="mobile-banner">Large Mobile Banner</div>
   <div class="half-banner">Half Banner</div>
   <div class="wrapper">
-    <h1 class="margin10T hind-guntur h1 cad lh">Quadratic Equation Solver</h1>
+    <h1 class="margin10T hind-guntur h1 cad lh">Online Quadratic Equation Solver</h1>
     <div class="eq-st-form hind-guntur-light margin10T align-center">
       <div class="afb f14">Standard form of Quadratic equation is</div>
       <div class="f18 afb"><span class="cof">a</span>x<sup>2</sup> + <span class="cof">b</span>x + <span class="cof">c</span> = <span class="cof">0</span>, &nbsp;&nbsp;<span class="afb f16">a &#8800; 0</div>
@@ -82,13 +91,18 @@
       </div>
       <!-- <div id="need-help" class="blue align-center margin10T cursor-pointer">Need help entering values?</div>-->
       <h3 class="margin20T hind-guntur cad lh">Roots (Solutions) of the equation</h3>
-      <div class="f22 cad margin10T"><b>x<sub>1</sub> :</b><input type="text" id="x1" class="hind-guntur-bold f18 cad" readonly>&nbsp;<span class="cursor-pointer afb f10 hind-guntur-bold copy" onclick="copiedToClipBoard('x1', this);">COPY</span></div>
-      <div class="f22 cad margin10T"><b>x<sub>2</sub> :</b><input type="text" id="x2" class="hind-guntur-bold f18 cad" readonly>&nbsp;<span class="cursor-pointer afb f10 hind-guntur-bold copy" onclick="copiedToClipBoard('x2', this);">COPY</span></div>
+      <div class="f22 cad margin10T"><b>x<sub>1</sub> :</b><input type="text" id="x1" class="hind-guntur-bold f18 cad" autocomplete="off" readonly>&nbsp;<span class="cursor-pointer afb f10 hind-guntur-bold copy" onclick="copiedToClipBoard('x1', this);">COPY</span></div>
+      <div class="f22 cad margin10T"><b>x<sub>2</sub> :</b><input type="text" id="x2" class="hind-guntur-bold f18 cad" autocomplete="off" readonly>&nbsp;<span class="cursor-pointer afb f10 hind-guntur-bold copy" onclick="copiedToClipBoard('x2', this);">COPY</span></div>
       <div class="margin5T f14 hind-guntur green not-visible" id="your-disc">&nbsp;</div>
     </div>
     <h2 class="stepH margin10T hind-guntur cad lh">Step By Step Solution Using Quadratic Formula</h2>
     <div class="card margin10T margin20B hind-guntur-bold padding20 f16 afb step-by-step-solution" id="step-by-step-solution">Quadratic formula $$ x_{1,2} = {-b \pm \sqrt{b^2 - 4ac} \over 2a} $$</div>
+    <!-- Affiliate link of Namesilo for Laptop, Tablets and bigger mobiles -->
+    <div class="affiliate-banner">
+      <a href="https://www.namesilo.com/?rid=10d0c51id"><img src="https://www.namesilo.com/affiliate/banner_gen.php?aid=10d0c51id&bid=12" style="border:0;"></a>
+    </div>
   </div>
+
 </body>
 <script type="text/javascript" src="/js/index.js"></script>
 </html>
