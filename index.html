@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67131474-4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-67131474-4');
+    </script>
+  <!-- End of Google Analytics script -->
+
   <meta name="theme-color" content="#314B53" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:title" content="Online Quadratic Equation Solver | Quadratic Solver" />
-  <meta name="keywords" content="quadratic solver,quadratic equation solver,online quadratic equation solver,quadratic equation calculator,online quadratic calculator,roots of quadratic equation,solutions of quadratic equation,quadratic formula,algebra,solve,calculator,online calculator"/>
-  <meta name="description" content="Free and online quadratic equation solver. Just enter a, b and c values and get the solutions of your quadratic equation instantly. Fast and easy to use quadratic equation calculator."/>
+  <meta name="keywords" content="quadratic solver,quadratic equation solver,online quadratic equation solver,quadratic equation calculator,online quadratic calculator,roots of quadratic equation,solutions of quadratic equation,quadratic formula,algebra,solve,calculator,online calculator,quadratic formula solver, free quadratic calculator"/>
+  <meta name="description" content="Online quadratic equation solver. Just enter a, b and c values and get the solutions of your quadratic equation instantly. Step by step solution of quadratic equation using quadratic formula."/>
   <meta name="thumbnail" content="https://quadraticsolver.com/imgs/online_quadratic_solver.png" />
   <meta property="og:locale" content="en_GB" />
   <meta property="og:site_name" content="Quadratic Solver" />
@@ -22,15 +34,15 @@
   <title>Online Quadratic Equation Solver | Quadratic Solver</title>
   <link rel="canonical" href="https://quadraticsolver.com/" />
   <link rel="stylesheet" href="/css/index.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" size="64x64">
-  <link rel="icon" href="/favicon_32.ico" type="image/x-icon" size="32x32">
+  <link rel="icon" href="/favicon.ico" type="image/png" sizes="64x64">
+  <link rel="icon" href="/favicon_32.ico" type="image/png" sizes="32x32">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": ["WebPage", "CreativeWork", "Thing"],
       "breadcrumb": "Mathematics > Online Calculators > Quadratic Equation Solver",
-      "lastReviewed": "2019-04-29",
+      "lastReviewed": "2019-05-16",
       "primaryImageOfPage": "https://quadraticsolver.com/imgs/online_quadratic_solver.png",
       "about": "Online quadratic equation solver",
       "accessModeSufficient": ["textual", "visual"],
@@ -44,16 +56,21 @@
       "isAccessibleForFree": "true",
       "accessibilityFeature": ["latex", "MathML", "longDescription"],
       "accessibilityControl": ["fullKeyboardControl", "fullTouchControl"],
-      "keywords": ["quadratic solver", "online quadratic solver", "quadratic equation calculator", "quadratic formula solver", "online roots of quadratic equation"],
+      "keywords": ["quadratic solver", "online quadratic solver", "quadratic equation calculator", "quadratic formula solver", "online roots of quadratic equation", "step by step quadratic solver", "free quadratic calculator"],
       "learningResourceType": "Calculator",
       "thumbnailUrl": "https://quadraticsolver.com/imgs/thumbnail-quadratic-solver.png",
       "version": "1",
-      "description": "An online and free quadratic equation solver. Just enter the coefficients of the equation and get the roots (solution) of the equation immediately.",
+      "description": "An online and free quadratic equation solver. Just enter the coefficients of the equation and get the roots (solution) of the equation immediately. Step by step solution of quadratic equation using quadratic formula.",
       "name": "Quadratic Solver",
       "url": "https://quadraticsolver.com"
     }
   </script>
 </head>
+
+<div class="cookie-notice hind-guntur f14 padding8 not-active" id="cookie-notice">
+  <div>This website uses cookies to ensure better user experience. You consent to our cookies if you continue to use this website. Read our <a href="#" style="color: yellow;">Privacy Policy</a> for more.</div>
+  <div class="margin5T button cursor-pointer align-center" onclick="acceptCookie();"><b>OK</b></div>
+</div>
 
 <body class="off-white">
   <nav class="nav-bgc">
@@ -61,7 +78,7 @@
       <div class="merienda f20 margin10L E8 ls">QUADRATIC SOLVER</div>
       <div class="f12 hind-guntur E8 margin10L">FOR ALL YOUR QUADRATIC QUERIES</div>
     </div>
-    <div class="hamburger margin10R">
+    <div class="hamburger margin10R cursor-pointer" onclick="changeBurger();" id="hamburger">
       <div></div>
       <div class="middle-line"></div>
       <div></div>
@@ -97,11 +114,12 @@
     </div>
     <h2 class="stepH margin10T hind-guntur cad lh">Step By Step Solution Using Quadratic Formula</h2>
     <div class="card margin10T margin20B hind-guntur-bold padding20 f16 afb step-by-step-solution" id="step-by-step-solution">Quadratic formula $$ x_{1,2} = {-b \pm \sqrt{b^2 - 4ac} \over 2a} $$</div>
+
     <!-- Affiliate link of Namesilo for Laptop, Tablets and bigger mobiles -->
     <div class="affiliate-banner">
       <a href="https://www.namesilo.com/?rid=10d0c51id"><img src="https://www.namesilo.com/affiliate/banner_gen.php?aid=10d0c51id&bid=12" style="border:0;"></a>
     </div>
-  </div>
+  </div> <!-- End of Wrapper Div -->
 
 </body>
 <script type="text/javascript" src="/js/index.js"></script>

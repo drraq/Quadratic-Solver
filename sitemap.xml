@@ -5,6 +5,11 @@
       <loc>https://quadraticsolver.com/</loc>
       <image:image>
         <image:loc>https://quadraticsolver.com/imgs/thumbnail-quadratic-solver.png</image:loc>
+        <image:caption>The cover image of the website</image:caption>
+      </image:image>
+      <image:image>
+        <image:loc>https://quadraticsolver.com/imgs/online_quadratic_solver.png</image:loc>
+        <image:caption>Free and Online Quadratic Equation Calculator, just enter coefficients of a, b and c for the given quadratic equation and get the roots of the equation.</image:caption>
       </image:image>
       <priority>1</priority>
    </url>
